@@ -1,6 +1,6 @@
-Set-Location $PSScriptRoot
+Set-Location "I:\videos\Ach"
 
-$a = Invoke-RestMethod "https://fixcdn.hyonsu.com/attachments/1031591699421593670/1461054418966413402/a.json" | ConvertFrom-Json
+$a = Invoke-RestMethod "https://raw.githubusercontent.com/Msgame79/AchVideos/refs/heads/main/a.json"
 
 $Levels = $a.psobject.properties.name
 $Achievements = @()
